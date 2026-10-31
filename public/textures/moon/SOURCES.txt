@@ -1,0 +1,14 @@
+NASA's Scientific Visualization Studio — CGI Moon Kit
+Source: https://svs.gsfc.nasa.gov/4720/
+Credit: NASA's Scientific Visualization Studio
+Data: Lunar Reconnaissance Orbiter / LROC / LOLA
+Downloaded: 2026-10-30
+
+lroc-color-2k.jpg (2048 x 1024, unmodified)
+https://svs.gsfc.nasa.gov/vis/a000000/a004700/a004720/lroc_color_2k.jpg
+
+ldem-height-1k.jpg (1024 x 512, unmodified)
+https://svs.gsfc.nasa.gov/vis/a000000/a004700/a004720/ldem_3_8bit.jpg
+
+Usage guidance: https://www.nasa.gov/nasa-brand-center/images-and-media/
+The website is not affiliated with or endorsed by NASA.

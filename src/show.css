@@ -1,0 +1,71 @@
+@media(min-width:641px){.experience{height:calc(100svh - 167px)}}
+/* A small performance belongs to the existing moonlit stage. */
+.show-button svg{fill:currentColor;stroke-width:1.2;width:16px;height:16px}
+.gift-extra-actions{display:flex;align-items:center;flex-wrap:wrap;gap:9px 22px;margin-top:13px}
+.gift-extra-actions button{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:36px;padding:3px 0;background:none;color:#9d92a8;font:inherit;font-size:9px;letter-spacing:.05em;line-height:1.5}
+.gift-extra-actions button svg{width:15px;height:15px;flex-shrink:0;fill:none;stroke:currentColor;stroke-width:1.15}
+.gift-extra-actions button:hover{color:#e7d5bb}
+.gift-extra-actions .secret-link{color:#b69c7e}
+.gift-extra-actions button:disabled{opacity:.4;cursor:default}
+.hero-note{max-width:335px;line-height:1.85}
+.show-tools{position:absolute;z-index:8;left:45%;right:5%;bottom:41px;display:grid;grid-template-columns:1fr auto;gap:13px 20px;align-items:end;color:#e8d9e3;text-shadow:0 1px 9px #080b18}
+.show-tools[hidden],.candy-note[hidden]{display:none}
+.show-tools-copy>span{font-size:8px;letter-spacing:.12em;color:#b8a5b9}
+.show-tools-copy p{font-family:"Yu Mincho","Hiragino Mincho ProN",serif;font-size:13px;font-weight:400;letter-spacing:.08em;line-height:1.6;margin:7px 0 0}
+.show-tools button{display:flex;gap:12px;align-items:center;min-height:40px;padding:7px 0;background:none;border-bottom:1px solid #e4c9c749;color:#ead6c5;font:inherit;font-size:9px;letter-spacing:.07em;white-space:nowrap}
+.show-tools button:hover{color:#fff1dd;border-color:#f3dfc6}
+.show-tools progress{grid-column:1/-1;width:100%;height:2px;appearance:none;border:0;background:#dad0e326;border-radius:1px;overflow:hidden}
+.show-tools progress::-webkit-progress-bar{background:#dad0e326}
+.show-tools progress::-webkit-progress-value{background:linear-gradient(90deg,#aa9ac5,#e5b3cf,#f1d9ad)}
+.show-tools progress::-moz-progress-bar{background:#e5b3cf}
+.show-running .stage-caption{opacity:.18}
+.show-running .experience-footer{visibility:hidden}
+.show-running .scene-container canvas{cursor:default!important}
+.studio-open .show-button,.studio-open .gift-extra-actions{display:none}
+
+.gift-reveal-dialog{width:min(520px,calc(100vw - 38px));max-height:calc(100svh - 36px);padding:24px 0 0;border:0;background:transparent;color:#282633;overflow:visible}
+.gift-reveal-dialog::backdrop{background:#060918c9;backdrop-filter:blur(7px)}
+.gift-reveal-dialog[open]{animation:gift-delivered .7s cubic-bezier(.2,.7,.2,1) both}
+.gift-notice{position:relative;display:flex;flex-direction:column;gap:0;width:100%;min-height:300px;padding:25px 32px 23px;background:#f0ede4;color:#302c35;text-align:left;border:1px solid #fff9ee;box-shadow:0 28px 90px #0007;font-family:"Yu Mincho","Hiragino Mincho ProN","Noto Serif JP",serif;cursor:pointer;isolation:isolate;background-image:radial-gradient(ellipse at 10% 0%,#fffaf8b0,transparent 65%),repeating-linear-gradient(0deg,#68544903 0 1px,transparent 1px 3px)}
+.gift-notice::before{content:"";position:absolute;inset:10px;border:1px solid #52485430;pointer-events:none}
+.gift-notice-top{display:flex;justify-content:space-between;font-size:9px;letter-spacing:.13em;color:#867c85}
+.gift-notice-title{display:block;text-align:center;font-weight:500;font-size:36px;letter-spacing:.35em;padding-left:.35em;margin:10px 0 14px}
+.gift-notice-to{display:block;font-size:10px;letter-spacing:.08em;color:#7d6d7b;margin-bottom:9px}
+.gift-notice-message{display:block;font-size:14px;letter-spacing:.045em;line-height:1.95}
+.gift-notice-bottom{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;margin-top:auto;padding-top:19px}
+.gift-notice-bottom>span:first-child{font-size:9px;letter-spacing:.045em;color:#8d7c87;line-height:1.7}
+.gift-notice-signature{display:flex;align-items:flex-end;gap:11px;font-size:15px;letter-spacing:.08em;white-space:nowrap}
+.gift-notice .invitation-emblem{width:32px;height:39px}
+.reveal-close{position:absolute;right:0;top:-20px;width:40px;height:40px;color:#d6cbdc;z-index:2}
+.reveal-hint{text-align:center;font-size:10px;line-height:1.9;letter-spacing:.12em;color:#c1b1c7;margin:21px 0 0}
+.gift-notice:focus-visible{outline:2px solid #dac0dc;outline-offset:6px}
+@keyframes gift-delivered{from{opacity:0;transform:translateY(16px) rotate(-1deg)}to{opacity:1;transform:translateY(0) rotate(0)}}
+
+.candy-note{position:absolute;z-index:12;left:69%;top:54%;transform:translate(-50%,-50%) rotate(-1deg);width:280px;max-width:calc(100% - 40px);padding:28px 24px 25px;background:#ede3d5;color:#44323d;box-shadow:0 18px 70px #0507137a;border:1px solid #fff8eb;text-align:center}
+.candy-note::before{content:"";position:absolute;inset:7px;border:1px solid #80696c35;pointer-events:none}
+.candy-close{position:absolute;right:7px;top:7px;color:#78636d;width:36px;height:36px}
+.candy-illustration{width:34px;height:34px;fill:none;stroke:#a86965;stroke-width:1;transform:rotate(-18deg);margin-bottom:12px}
+.candy-note h2{font-family:"Yu Mincho","Hiragino Mincho ProN",serif;font-weight:400;font-size:15px;line-height:1.7;margin:0 0 11px;letter-spacing:.035em}
+.candy-note p{font-size:10px;line-height:2.1;letter-spacing:.025em;color:#826d77;margin:0}
+
+@media(max-width:880px) and (min-width:641px){
+  .gift-extra-actions{gap:7px 14px;margin-top:8px}.gift-extra-actions button{font-size:8px}
+  .show-tools{left:47%;right:4%;gap:10px 12px}.show-tools-copy p{font-size:11px}.show-tools button{font-size:8px}
+}
+@media(max-width:640px){
+  .gift-extra-actions{gap:6px 22px;margin-top:9px}.gift-extra-actions button{font-size:9px;min-height:34px}
+  .hero-note{max-width:330px;font-size:8px;line-height:1.7}
+  body.invited:not(.studio-open) .scene-container{top:310px;bottom:112px}
+  body.invited:not(.studio-open) .stage-seal{top:326px}
+  .show-tools{left:24px;right:24px;bottom:26px;gap:7px 12px}
+  .show-tools-copy>span{font-size:7px;letter-spacing:.06em}.show-tools-copy p{font-size:10px;letter-spacing:.02em;margin-top:4px}
+  .show-tools button{font-size:9px;min-height:42px;gap:6px}
+  .gift-notice{min-height:216px;padding:17px 22px 16px}.gift-notice-title{font-size:26px;margin:7px 0 8px}
+  .gift-notice-top{font-size:8px}.gift-notice-to{font-size:9px;margin-bottom:6px}.gift-notice-message{font-size:11.5px;line-height:1.85}
+  .gift-notice-bottom{gap:12px;padding-top:12px}.gift-notice-bottom>span:first-child{font-size:8px}
+  .gift-notice-signature{font-size:12px;gap:8px}.gift-notice .invitation-emblem{width:24px;height:29px}
+  .reveal-hint{font-size:9px;margin-top:19px}.reveal-close{right:0}
+  .candy-note{left:50%;top:65%;width:270px}
+}
+@media(max-width:350px){.gift-extra-actions{gap:4px 12px}.gift-extra-actions button{font-size:8px}.gift-notice{padding:21px 19px 17px}.gift-notice-message{font-size:11px}.show-tools{left:18px;right:18px}}
+@media(prefers-reduced-motion:reduce){.gift-reveal-dialog[open]{animation:none}.show-tools progress{transition:none}}

@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0a0e1b" />
+    <meta name="description" data-i18n-content="static.description" content="月明かりと、かぼちゃと、花火。" />
+    <title data-i18n="static.pageTitle">月下の招待 · 小さなハロウィンギフト</title>
+  </head>
+  <body>
+    <svg class="svg-sprite" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+      <symbol id="icon-star" viewBox="0 0 24 24"><path d="m12 2 2.4 7.6L22 12l-7.6 2.4L12 22l-2.4-7.6L2 12l7.6-2.4L12 2Z"/></symbol>
+      <symbol id="icon-arrow" viewBox="0 0 24 24"><path d="M4 12h15m-5-5 5 5-5 5"/></symbol>
+      <symbol id="icon-close" viewBox="0 0 24 24"><path d="m6 6 12 12M6 18 18 6"/></symbol>
+      <symbol id="icon-sound" viewBox="0 0 24 24"><path d="m11 5-5 4H3v6h3l5 4V5Zm4 3a6 6 0 0 1 0 8m3-11a10 10 0 0 1 0 14"/></symbol>
+      <symbol id="icon-move" viewBox="0 0 24 24"><path d="M4 12h16M12 4v16m-5-6-3-2 3-2m10 4 3-2-3-2M10 7l2-3 2 3m-4 10 2 3 2-3"/></symbol>
+      <symbol id="icon-envelope" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="1"/><path d="m3 6 9 7 9-7m-18 12 6-6m12 6-6-6"/></symbol>
+      <symbol id="icon-play" viewBox="0 0 24 24"><path d="m8 5 11 7-11 7V5Z"/></symbol>
+      <symbol id="icon-pumpkin" viewBox="0 0 24 24"><path d="M12 6c-2-4 2-4 2-5M12 7C3 1-1 19 8 21l4-1 4 1c9-2 5-20-4-14ZM12 7c-5-2-5 15 0 13 5 2 5-15 0-13ZM7 12l2 2H6l1-2Zm10 0-2 2h3l-1-2ZM8 17l2 1 2-1 2 1 2-1"/></symbol>
+      <symbol id="icon-candy" viewBox="0 0 24 24"><path d="m8 8-5-3 1 5-1 4 5-2m8 0 5 3-1-5 1-4-5 2M8 8c4-5 12 3 8 8S3 13 8 8Zm1-1 8 8m-11-4 7 7"/></symbol>
+    </svg>
+
+    <nav class="language-switch" id="language-switch" data-i18n-aria-label="static.languageNav" aria-label="表示言語">
+      <button type="button" data-language="ja" lang="ja" aria-pressed="true">日本語</button>
+      <button type="button" data-language="zh" lang="zh-CN" aria-pressed="false">中文</button>
+    </nav>
+
+    <header class="site-header">
+      <a class="brand" href="#" data-i18n-aria-label="static.homeLabel" aria-label="月下の招待 ホーム">
+        <span class="brand-mark kid-mark" role="img" data-i18n-aria-label="static.kidLogoLabel" aria-label="怪盗キッドの予告状のマーク"></span>
+        <span class="brand-name"><span data-i18n="static.brand">月下の招待</span><small data-i18n="static.brandSubtitle">ハロウィンの小さな贈りもの</small></span>
+      </a>
+      <nav class="main-nav" data-i18n-aria-label="static.mainNav" aria-label="メインメニュー">
+        <button type="button" class="nav-link is-active" id="stage-tab" data-i18n="static.stageTab">月下の舞台</button>
+        <button type="button" class="nav-link" id="letter-tab" data-i18n="static.letterTab">あなたへの手紙</button>
+      </nav>
+      <div class="header-actions">
+        <span class="header-date"><span data-i18n="static.month">10月</span> 31</span>
+        <button type="button" class="studio-toggle" id="studio-toggle" aria-expanded="false" aria-controls="studio-panel" hidden><svg><use href="#icon-star"/></svg><span data-i18n="static.studioButton">振付スタジオ</span></button>
+      </div>
+    </header>
+
+    <main>
+      <section class="experience" id="experience" data-i18n-aria-label="static.experienceLabel" aria-label="ハロウィンの月下の舞台">
+        <div id="scene-container" class="scene-container" data-i18n-aria-label="static.sceneLabel" aria-label="回転して楽しめる月下の3D舞台" aria-hidden="true"></div>
+        <div class="hero-vignette" aria-hidden="true"></div>
+        <div class="cinematic-bars" aria-hidden="true"></div>
+        <div class="cinematic-caption" aria-hidden="true"><span id="cinematic-line">予告状は、花びらに。</span><small id="cinematic-translation">この夜に、小さな魔法を。</small></div>
+        <div class="invitation-mount" id="invitation-mount">
+          <div class="invitation-aura" aria-hidden="true"></div>
+          <button class="invitation-card" id="invitation-card" type="button" data-i18n-aria-label="static.noticeLabel" aria-label="怪盗キッドの予告状を開く">
+            <span class="invitation-card-top"><span>No. 1412</span><span data-i18n="static.noticeNight">ハロウィンの夜</span></span>
+            <span data-i18n="static.noticeTitle" class="invitation-title">予告状</span>
+            <span class="invitation-to" data-invitation-recipient>友だちへ</span>
+            <span data-i18n-lines="static.noticeMessage" class="invitation-message">ハロウィンの夜、<br />月明かりの舞台へご招待します。</span>
+            <span class="invitation-card-bottom"><span class="invitation-open"><span data-i18n="static.noticeOpen">タップして開く</span> <svg aria-hidden="true"><use href="#icon-arrow"/></svg></span><span class="invitation-signature"><span data-i18n="static.noticeSignature">怪盗キッド</span><span class="invitation-emblem" aria-hidden="true"></span></span></span>
+          </button>
+        </div>
+        <div class="entrance-tools" id="entrance-tools" hidden><span id="entrance-status">予告状が花びらに</span><button type="button" id="skip-entrance"><span data-i18n="static.skip">スキップ</span> <span aria-hidden="true">↗</span></button></div>
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="mini-line"></span><span data-i18n="static.heroEyebrow">友だちからの、小さな贈りもの</span></p>
+          <h1>今夜は、<br />ハロウィン気分で。</h1>
+          <p data-i18n-lines="static.heroDescription" class="hero-description">月明かりと、かぼちゃと、花火。</p>
+          <div class="hero-actions">
+            <button type="button" class="invite-button show-button" id="show-button" disabled><span id="show-label" data-i18n="show.start">花火をあげる</span><svg aria-hidden="true"><use href="#icon-play"/></svg></button>
+            <button type="button" class="text-button" id="open-letter" disabled><svg><use href="#icon-envelope"/></svg><span data-i18n="static.openCard">カードを開く</span></button>
+          </div>
+          <p class="hero-note" id="hero-note" role="status" aria-live="polite"><svg><use href="#icon-star"/></svg>あなたを待つ、一通の予告状。</p>
+          <div class="gift-extra-actions">
+            <button type="button" class="gift-replay" id="invite-button"><svg aria-hidden="true"><use href="#icon-arrow"/></svg><span id="invite-label">もう一度見る</span></button>
+            <button type="button" class="secret-link" id="pumpkin-secret" disabled data-i18n-aria-label="show.secretAria" aria-label="7つのかぼちゃの魔法を順番に試す"><svg aria-hidden="true"><use href="#icon-pumpkin"/></svg><span data-i18n="show.secret">かぼちゃの、小さな秘密</span></button>
+          </div>
+        </div>
+        <div class="show-tools" id="show-tools" hidden>
+          <div class="show-tools-copy"><span data-i18n="show.label">月明かりの、ハロウィン花火</span><p id="show-status" role="status" aria-live="polite"></p></div>
+          <button type="button" id="skip-show"><span data-i18n="show.skip">舞台へ戻る</span><span aria-hidden="true">↗</span></button>
+          <progress id="show-progress" max="1" value="0" data-i18n-aria-label="show.progress" aria-label="花火の進み具合"></progress>
+        </div>
+        <div class="stage-seal" aria-hidden="true"><span data-i18n="static.sealHalloween">ハロウィン</span><svg><use href="#icon-star"/></svg><span data-i18n="static.sealMagic">魔法の夜</span></div>
+        <div data-i18n="static.verticalNote" class="vertical-note" aria-hidden="true">今夜はハロウィンを楽しもう</div>
+        <div class="experience-footer">
+          <span class="drag-hint"><svg><use href="#icon-move"/></svg><span data-i18n="static.dragHint">ドラッグで回転 · ピンチで拡大</span></span>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="site-footer"><span data-i18n="static.footerMemory">忘れられない一夜に</span><span><span data-i18n="static.footerWish">毎日に、小さな魔法がありますように。</span><svg><use href="#icon-star"/></svg></span><span><span data-i18n="static.footerDate">ハッピーハロウィン · 10.31</span> <a class="logo-credit" href="/credits.html" data-i18n="static.creditsLink">図案のクレジット</a></span></footer>
+
+    <section class="timeline-panel" id="timeline-panel" aria-labelledby="timeline-title" hidden>
+      <div class="timeline-header"><div class="timeline-title"><h2 id="timeline-title" data-i18n="static.timelineTitle">動きのタイムライン</h2><span id="frame-count">キーフレーム 0 個</span></div><div class="timeline-actions"><button type="button" class="quiet-button" id="demo-frames" data-i18n="static.demoFrames">サンプル</button><button type="button" class="quiet-button" id="clear-frames" data-i18n="static.clearFrames">すべて削除</button><button type="button" class="small-button" id="add-frame" data-i18n="static.addFrame">＋ キーフレーム追加</button><button type="button" class="small-button icon-small" id="delete-frame" data-i18n-aria-label="static.deleteFrame" aria-label="選択中のキーフレームを削除" data-i18n-title="static.deleteFrame" title="選択中のキーフレームを削除"><svg><use href="#icon-close"/></svg></button></div></div>
+      <div class="frames" id="frames"></div>
+      <div class="timeline-transport"><button type="button" class="transport-button" id="play-button" aria-label="動きを再生"><svg><use href="#icon-play"/></svg><span>再生</span></button><button type="button" class="transport-stop" id="stop-button" data-i18n-aria-label="static.stop" aria-label="停止して最初に戻る"><span></span></button><output id="time-readout">0.0 / 0.0 s</output><input type="range" id="scrubber" min="0" max="1" value="0" step="0.01" data-i18n-aria-label="static.scrubber" aria-label="動きの再生位置" /><span data-i18n="static.timelineTip" class="timeline-tip">キーフレームを選んで、動きを調整。</span></div>
+    </section>
+
+    <aside class="studio-panel" id="studio-panel" aria-labelledby="studio-title" hidden>
+      <div class="studio-header"><div><p data-i18n="static.studioEyebrow" class="eyebrow">月下のアトリエ</p><h2 id="studio-title" data-i18n="static.studioTitle">月下の振付スタジオ</h2></div><button type="button" class="icon-button" id="studio-close" data-i18n-aria-label="static.closeStudio" aria-label="スタジオを閉じる"><svg><use href="#icon-close"/></svg></button></div>
+      <div class="studio-scroll">
+        <section class="studio-section model-section">
+          <div class="section-heading"><h3 data-i18n="static.modelSectionTitle">主役の場所</h3><span data-i18n="static.modelSectionNumber">01 / モデル</span></div>
+          <p data-i18n="static.modelSectionDescription" class="section-description">舞台の準備は完了。あなたのモデルを迎えて。</p>
+          <div class="model-dropzone"><svg><use href="#icon-star"/></svg><span id="model-status">モデル用の場所を用意しています</span><button type="button" class="small-button light" id="load-model" data-i18n="static.loadModel">GLBモデルを選択</button><input type="file" id="model-file" accept=".glb,model/gltf-binary" hidden /><button type="button" class="quiet-button" id="clear-model" data-i18n="static.clearModel">モデルを外す</button></div>
+          <p data-i18n="static.glbNote" class="input-note">GLBは単一ファイル形式です。下でボーンを関節に割り当てられます。</p>
+          <details class="studio-details"><summary data-i18n="static.mappingSummary">ボーンと関節の割り当て</summary><div id="joint-map" class="joint-map"><p data-i18n="static.mappingEmpty" class="input-note">リグ付きモデルを読み込むと、各関節のボーンを選べます。</p></div><label class="check-label"><input type="checkbox" id="show-skeleton" /><span data-i18n="static.showSkeleton">スケルトンガイドを表示</span></label></details>
+        </section>
+        <section class="studio-section">
+          <div class="section-heading"><h3 data-i18n="static.poseSectionTitle">ポーズを調整</h3><span data-i18n="static.poseSectionNumber">02 / ポーズ</span></div>
+          <div class="preset-row"><button type="button" class="small-button" data-preset="salute" data-i18n="static.salute">ご挨拶</button><button type="button" class="small-button" data-preset="spread" data-i18n="static.spread">腕を広げる</button><button type="button" class="small-button" data-preset="step" data-i18n="static.step">ステップ</button><button type="button" class="small-button" data-preset="neutral" data-i18n="static.neutral">立ち姿</button></div>
+          <div id="joint-controls" class="joint-controls"></div>
+          <button type="button" class="quiet-button" id="reset-pose" data-i18n="static.resetPose">↺ 現在のポーズをリセット</button>
+        </section>
+        <section class="studio-section">
+          <div class="section-heading"><h3 data-i18n="static.stageSettingsTitle">舞台の設定</h3><span data-i18n="static.stageSettingsNumber">03 / 舞台</span></div>
+          <label class="check-label"><input type="checkbox" id="auto-rotate" /><span data-i18n="static.autoRotate">自動で周囲を回る</span></label>
+          <label class="check-label"><input type="checkbox" id="particles-toggle" checked /><span data-i18n="static.particles">星のきらめき</span></label>
+          <div class="button-row"><button type="button" class="small-button" id="reset-camera" data-i18n="static.resetCamera">視点をリセット</button><button type="button" class="small-button" id="screenshot" data-i18n="static.screenshot">舞台の画像を保存</button></div>
+        </section>
+        <section class="studio-section dance-settings">
+          <div class="section-heading"><h3 data-i18n="static.timingTitle">振付の設定</h3><span data-i18n="static.timingNumber">04 / タイミング</span></div>
+          <div class="slider"><div class="slider-label"><label data-i18n="static.duration" for="duration">一区間の長さ</label><output id="duration-value" for="duration">0.7 秒</output></div><input id="duration" type="range" min="0.1" max="3" step="0.1" value="0.7" /></div>
+          <div class="slider"><div class="slider-label"><label data-i18n="static.speed" for="speed">再生速度</label><output id="speed-value" for="speed">1.0×</output></div><input id="speed" type="range" min="0.25" max="2" step="0.25" value="1" /></div>
+          <label class="check-label"><input type="checkbox" id="loop" checked /><span data-i18n="static.loop">繰り返し再生</span></label>
+          <div class="button-row"><button type="button" class="small-button light" id="save-dance" data-i18n="static.saveDance">この端末に保存</button><button type="button" class="small-button" id="export-dance" data-i18n="static.exportDance">JSONを書き出す</button><button type="button" class="small-button" id="import-dance" data-i18n="static.importDance">読み込む</button><input id="dance-file" type="file" accept=".json,application/json" hidden /></div>
+          <p data-i18n="static.saveNote" class="input-note">動きはこのブラウザーに保存でき、JSONでも書き出せます。</p>
+        </section>
+      </div>
+      <div class="studio-bottom"><span class="status-dot"></span><span data-i18n="static.studioBottom">同じ舞台、同じ月明かり。</span></div>
+    </aside>
+
+    <dialog class="letter-dialog" id="letter-dialog" aria-labelledby="letter-title">
+      <button type="button" class="letter-close icon-button" id="close-letter" data-i18n-aria-label="static.closeLetter" aria-label="手紙を閉じる"><svg><use href="#icon-close"/></svg></button>
+      <div class="letter-corner corner-top" aria-hidden="true"></div><div class="letter-corner corner-bottom" aria-hidden="true"></div>
+      <svg class="letter-star" aria-hidden="true"><use href="#icon-star"/></svg>
+      <p data-i18n="static.letterEyebrow" class="letter-eyebrow">友だちからのハロウィン便り</p>
+      <h2 id="letter-title" data-recipient>友だちへ</h2>
+      <span class="letter-rule" aria-hidden="true"></span>
+      <div class="letter-body" data-letter-body><p>毎日に、小さな楽しみがありますように。</p><p class="letter-wish">トリック・オア・トリート！<br />ハッピーハロウィン。</p></div>
+      <div class="letter-signature"><span data-i18n="static.letterSignature">cyt</span></div>
+      <button type="button" class="letter-replay" id="replay-button"><span data-i18n="static.replay">もう一度</span><svg><use href="#icon-arrow"/></svg></button>
+      <div class="letter-language-switch" role="group" data-i18n-aria-label="static.languageNav" aria-label="表示言語">
+        <button type="button" data-language="ja" lang="ja" aria-pressed="true">日本語</button>
+        <button type="button" data-language="zh" lang="zh-CN" aria-pressed="false">中文</button>
+      </div>
+      <p data-i18n="static.letterDate" class="letter-date">10月31日 · ハッピーハロウィン</p>
+    </dialog>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
