@@ -4,9 +4,9 @@ import * as THREE from 'three';
 // Its lighting is independent of the nearby pink stage lights.
 export function createMoon() {
   const loader = new THREE.TextureLoader();
-  const albedo = loader.load('/textures/moon/lroc-color-2k.jpg');
+  const albedo = loader.load(`${import.meta.env.BASE_URL}textures/moon/lroc-color-2k.jpg`);
   albedo.colorSpace = THREE.SRGBColorSpace;
-  const elevation = loader.load('/textures/moon/ldem-height-1k.jpg');
+  const elevation = loader.load(`${import.meta.env.BASE_URL}textures/moon/ldem-height-1k.jpg`);
   albedo.wrapS = elevation.wrapS = THREE.RepeatWrapping;
   const material = new THREE.ShaderMaterial({
     name: 'Lunar regolith',

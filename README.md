@@ -1,6 +1,6 @@
 # 月下邀约
 
-[打开万圣节网站](https://moonlight-halloween-1412-gift.youngbeech1.chatgpt.site/)
+[打开万圣节网站](https://obtito.github.io/moonlight-halloween-gift/)
 
 Three.js＋Vite 万圣节礼物网站，包含月下舞台、邀请与祝福卡、星尘、烟花演出和南瓜彩蛋。当前礼物版本不展示角色、占位卡牌或等待模型的提示，编舞入口已收起；模型导入和关键帧工具保留在源码中供以后使用。
 
@@ -88,9 +88,8 @@ model: {
 - 角色、舞台、粒子共用一个 Three.js 场景、相机、渲染器和动画循环；编舞只更新角色姿势。
 - 万圣节布景包含七只沿独立弧线飞行的蝙蝠、五支有蜡泪和暖色火焰的蜡烛、一座带小蜘蛛的银色蛛网架、舞台外缘的薄雾，以及两只小幽灵。两只幽灵在舞台侧后方轻轻漂浮，具有编织布纹、垂坠褶皱、卷边下摆与带厚度的眼口开孔，布料下摆随之起伏。`src/bats.js`、`src/halloween-atmosphere.js`、`src/halloween-candles.js`、`src/halloween-companions.js` 使用现有场景与动画循环；蝙蝠具有细长立体身体、弯曲翼膜、回程收翼和随轨迹倾侧的姿态；减少动态效果时冻结角色与氛围动效。角色中央位置保持空出。
 - 「保存舞台图片」导出 3D 画布的 PNG，不包含页面文字、编舞面板或祝福弹窗。
-- 氛围音效由浏览器合成，默认关闭，需手动开启；页面隐藏时暂停音效和渲染。
 - 开启系统的「减少动态效果」后，舞台使用更克制的动效。
-- 若托管为私有 Site，打开网址可能需要所有者登录。让其他人访问需要另外调整网站访问权限，文件分享本身不会改变访问范围。
+- GitHub Pages 网站面向外部访客开放，不需要登录 ChatGPT。
 
 ## 代码与效果来源
 
@@ -109,3 +108,9 @@ model: {
 后续效果参考：[发光溶解](https://github.com/JatinChopra/emissive-dissolve-effect)、[按钮粒子](https://github.com/codrops/ParticleEffectsButtons)、[三维光轨](https://github.com/Alchemist0823/three.quarks)、[粒子形态变化](https://github.com/MisterPrada/morph-particles)。
 
 文字形状烟花的视觉流程参考 [GrandFireworks](https://github.com/travisjmac/grand-fireworks-js) 与 [Cyber Fireworks](https://github.com/athenazhang-junzi/cyberfirework)；本项目使用自有 Three.js 粒子与共享时钟实现。
+
+## GitHub Pages 发布
+
+仓库的 Settings → Pages → Source 设为 GitHub Actions。推送到 main 后，工作流会依次安装依赖、运行测试、构建并发布 dist/。
+
+访问地址：https://obtito.github.io/moonlight-halloween-gift/ 。Vite base 已设为 /moonlight-halloween-gift/，月面贴图、南瓜纹理、Logo 和素材署名链接均沿用该子路径。
